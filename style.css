@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Baloo 2', cursive;
+
+
+}
+
+/* -------------------------------------------navbar */
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 95%;
+    background-color: white;
+
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border-bottom: 0.1px solid black;
+
+}
+
+#navbar h1 {
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(69, 69, 203);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    margin: 1rem 0rem;
+    padding: 0.8rem 1rem;
+    color: black;
+}
+
+.navigation li a:hover {
+    border-bottom: 3px solid rgb(69, 69, 203);
+    color: rgb(69, 69, 203);
+}
+.navigation li a:active {
+    border-bottom: 3px solid rgb(69, 69, 203);
+    color: rgb(69, 69, 203);
+}
+#night{
+    margin-left:0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#night i{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    /* color: rgb(0, 0, 0); */
+    
+}
+
+
+/* -----------------------------------------------home */
+#home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    flex-wrap: wrap-reverse;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+}
+
+.links a i {
+    width: 3rem;
+    height: 3rem;
+    color: rgb(69, 69, 203);
+    animation-name: example1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes example1 {
+    from {color: white;}
+    to {color: rgb(69, 69, 203);}
+  }
+
+
+#home img {
+    opacity: revert;
+    border-radius: 100px 0px 100px 0px;
+    height: 26rem;
+    width: 17rem;
+   
+    
+}
+
+.home-cont {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.2rem; */
+    width: 25rem;
+}
+
+.home-cont h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes example {
+    from {color: white;}
+    to {color: black;}
+  }
+
+.home-cont h5 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(88, 88, 88);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.home-cont p {
+    color: rgb(88, 88, 88);
+    font-weight: lighter;
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+
+.btn {
+    color: white;
+    background-color: rgb(69, 69, 203);
+    height: 3rem;
+    width: 9rem;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    box-shadow: 0rem 0rem 0.3rem 0rem black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(69, 69, 203);
+}
+
+/* ------------------------------------------------------------about */
+#About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+}
+
+.about-cont {
+    width: 25rem;
+    /* border: 2px solid black; */
+}
+
+.about-cont h1 {
+    font-weight: 400;
+    font-size: 3rem;
+
+    text-align: center;
+    border-bottom: 4px solid rgb(69, 69, 203);
+  
+  
+}
+
+.about-cont h6 {
+    font-weight: 100;
+    font-size: 1rem;
+    color: rgb(88, 88, 88);
+    ;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.about-cont p {
+    color: rgb(88, 88, 88);
+    ;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 0rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------skills */
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0rem;
+}
+
+#skills h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    border-bottom: 4px solid rgb(69, 69, 203);
+}
+
+.skill-cont {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem 0rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+
+.skill-cont img {
+    width: 7rem;
+    height: 7rem;
+    color: white;
+}
+
+.skill-cont h6 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* ------------------------------------------------------------projects */
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+    
+}
+
+#project h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    border-bottom: 4px solid rgb(69, 69, 203);
+    
+}
+
+.project-cont {
+    /* border: 2px solid blue; */
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box-proj{
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.3rem 0rem black;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+    background-color: #f2f2f2;
+}
+
+.box-proj img {
+    width: 22rem;
+    height: 11rem;
+
+}
+
+.box-proj h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0rem 0.5rem;
+}
+
+.box-proj p {
+    font-size: 0.8rem;
+    font-weight: 100;
+    padding: 0rem 0.5rem;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(69, 69, 203);
+    height: 3rem;
+    width: 7rem;
+    border: none;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    box-shadow: 0rem 0rem 0.3rem 0rem black;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: rgb(69, 69, 203);
+}
+/* --------------------------------------------------------------contact */
+
+#contact{
+    width: 94vw;
+    /* height: 25vw; */
+    background-color: rgb(69, 69, 203);
+    border-top-right-radius: 113rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    
+}
+#contact h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 4px solid white;
+    
+}
+.horizontal{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.contact-cont{
+    margin-top: 6rem;
+}
+.contact-cont a{
+    color: white;
+    text-decoration: none;
+}
+.social {
+    display: flex; 
+    gap: 0.7rem;
+
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+.social a:hover{
+background-color: white;
+color:rgb(69, 69, 203); 
+}
+
+/* ------------------------------------------------adding darkmode */
+.dark-mode {
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+
+
+  /* ------------------------------------------------------------------media queries */
+
+  @media only screen and (max-width:1000px){
+    #navbar{
+        justify-content: space-around;
+    }
+  
+  }
+
+  @media only screen and (max-width:700px){
+    #contact h1{
+        text-align: left;
+        padding-left: 1rem;
+    }
+    #navbar{
+        flex-direction: column;
+        justify-content: left;
+        height: 5rem;
+        
+    }
+    #navbar h1{
+        margin-bottom: 0.5rem;
+    }
+  }
+
+  @media only screen and (max-width:529px){
+    #contact h1{
+        padding-top: 9rem;
+    }
+    .horizontal{
+        flex-direction: column;
+        margin-left: 1rem;
+        
+    }
+
+  }
+  @media only screen and (max-width:448px){
+    #navbar{
+        
+        align-items: flex-start;
+    }
+    #navbar h1{
+        margin-left: 1rem;
+    }
+      .links {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    .home-cont {
+       
+        width: 19rem;
+    }
+    .about-cont {
+        width: 19rem;
+       
+    }
+    .navigation li a {
+        padding: 0.8rem 0.8rem;
+    }
+      
+  }
+
+  @media only screen and (max-width:361px){
+    #navbar {
+    
+        padding: 0.5rem 0.5rem;
+       
+    
+    }
+    .box-proj{
+        width: 18rem;
+    }
+    .box-proj img {
+        width: 18rem;
+        height: 7rem;
+    
+    }
+  }
